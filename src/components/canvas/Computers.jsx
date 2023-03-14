@@ -4,8 +4,11 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const   Computers = ({ isMobile }) => {
+
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  const [count, setCount] = useState(0);
+ 
 
   return (
     <mesh>
@@ -55,7 +58,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameLoop='demand'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
