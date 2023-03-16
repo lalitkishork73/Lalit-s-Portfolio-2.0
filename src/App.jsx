@@ -4,7 +4,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>

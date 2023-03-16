@@ -17,12 +17,16 @@ import {
     docker,
     meta,
     starbucks,
-    tesla,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    mysql,
+    express,
+    pratik,
+    mahesh,
+    Functionup
 } from "../assets";
 
 export const navLinks = [
@@ -53,10 +57,10 @@ const services = [
         title: "Backend Developer",
         icon: backend,
     },
-/*     {
-        title: "Content Creator",
-        icon: creator,
-    }, */
+    /*     {
+            title: "Content Creator",
+            icon: creator,
+        }, */
 ];
 
 const technologies = [
@@ -80,10 +84,10 @@ const technologies = [
         name: "React JS",
         icon: reactjs,
     },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
+    // {
+    //     name: "Redux Toolkit",
+    //     icon: redux,
+    // },
     {
         name: "Tailwind CSS",
         icon: tailwind,
@@ -93,8 +97,16 @@ const technologies = [
         icon: nodejs,
     },
     {
+        name: "Express JS",
+        icon: express,
+    },
+    {
         name: "MongoDB",
         icon: mongodb,
+    },
+    {
+        name: "MySQL",
+        icon: mysql,
     },
     {
         name: "Three JS",
@@ -105,10 +117,6 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
         name: "docker",
         icon: docker,
     },
@@ -116,149 +124,114 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Fullstack Developer Trainee",
+        company_name: "FunctionUP",
+        icon: Functionup,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "May 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developed and maintained MERN web apps with SQL.",
+            "Designed scalable solutions with AWS S3 and Redis and Implemented caching strategies with Redis.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+
+
 ];
 
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "I thought it was impossible to make a website as beautiful as our product, but Lalit proved me wrong.",
+        name: "Pratik Pidkalwar",
+        designation: "Trainee",
+        company: "FunctionUP",
+        image: pratik,
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "The way he understand and explain the dsa and programming is very good and attractive.",
+        name: "Mahesh Dhage ",
+        designation: "Trainee ",
+        company: "LenDenClub",
+        image: mahesh,
     },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "E-commerce Shoping cart",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "e-commerce shopping cart website is a back-end platform for selling products and services online. It typically consists of a frontend interface for customers to browse and purchase products, and a backend system to manage the data and handle the transactions.",
         tags: [
             {
-                name: "react",
+                name: "Node js",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "Mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Express",
                 color: "pink-text-gradient",
+            },
+            {
+                name: "AWS S3",
+                color: "white-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lalitkishork73/Project-5-Product-Management",
     },
     {
-        name: "Job IT",
+        name: "Blog-Management",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A blog management system is a platform used to create and manage a blog website.Back-end provides features and tools to help users publish and organize content, manage comments and feedback, and control the overall appearance and functionality of the blog.",
         tags: [
             {
-                name: "react",
+                name: "Nodejs",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Restapi",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "Mongodb",
                 color: "pink-text-gradient",
+            },
+            {
+                name: "Express",
+                color: "black-text-gradient",
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lalitkishork73/Project-1-Blog-Site",
     },
     {
-        name: "Trip Guide",
+        name: "Url Shortener",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A URL shortener is a web-based tool that takes long and complex URLs and transforms them into shorter, more manageable links.",
         tags: [
             {
-                name: "nextjs",
+                name: "Node js",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "Express",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Redis",
                 color: "pink-text-gradient",
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lalitkishork73/Project-4-URL_Shortner",
     },
 ];
 

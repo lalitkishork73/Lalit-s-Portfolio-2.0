@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link to="/"
           className='flex items-center gap-2' onClick={() => {
             setActive('');
-            window.scrollTo(0, 0);
+            window.scrollTo(0, 1000);
           }}>
           <img src={logo} alt='logo' className='w-20 h-20 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>Lalitkishor &nbsp;<span className='sm:block hidden'>| Fullstack Engineer</span></p>
@@ -25,7 +25,7 @@ const Navbar = () => {
           {navLinks.map((link) => {
             return (
               <li key={link.id} className={`${active === link.title ? 'text-white' : 'text-secondary'} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
-                <NavLink to={`${link.id}`} >{link.title}</NavLink>
+                <a href={`#${link.id}`} >{link.title}</a>
               </li>
             )
           })}
@@ -37,9 +37,11 @@ const Navbar = () => {
               {navLinks.map((link) => {
                 return (
                   <li key={link.id} className={`${active === link.title ? 'text-white' : 'text-secondary'} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => {
-                    
-                    setActive(link.title)}}>
-                    <NavLink to={`${link.id}`} >{link.title}</NavLink>
+
+                    setActive(link.title)
+                  }}>
+                    {/* <NavLink to={`#${link.id}`} >{link.title}</NavLink> */}
+                    <a href={`#${link.id}`}>{link.title}</a>
                   </li>
                 )
               })}
