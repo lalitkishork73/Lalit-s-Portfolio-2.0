@@ -186,18 +186,19 @@ const projects = [
         ],
         image: carrent,
         source_code_link: "https://github.com/lalitkishork73/Project-5-Product-Management",
+        visit_site:""
     },
     {
-        name: "Blog-Management",
+        name: "Book-Management",
         description:
-            "A blog management system is a platform used to create and manage a blog website.Back-end provides features and tools to help users publish and organize content, manage comments and feedback, and control the overall appearance and functionality of the blog.",
+            "A book management website is a platform that helps individuals organize and keep track of their book collection. It provides tools to catalog books, search through the collection, and manage information such as author, title, ISBN, and publication date.",
         tags: [
             {
                 name: "Nodejs",
                 color: "blue-text-gradient",
             },
             {
-                name: "Restapi",
+                name: "React",
                 color: "green-text-gradient",
             },
             {
@@ -205,12 +206,13 @@ const projects = [
                 color: "pink-text-gradient",
             },
             {
-                name: "Express",
+                name: "AWS S3",
                 color: "black-text-gradient",
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/lalitkishork73/Project-1-Blog-Site",
+        source_code_link: "https://github.com/lalitkishork73/Project-3-Book-Managment",
+        visit_site: "https://booksboys.onrender.com/",
     },
     {
         name: "Url Shortener",
@@ -232,6 +234,30 @@ const projects = [
         ],
         image: tripguide,
         source_code_link: "https://github.com/lalitkishork73/Project-4-URL_Shortner",
+        visit_site:"",
+    },
+    {
+        name: "Web Application",
+        description:
+        "A multiple HTML, CSS, JavaScript web application is a platform built using a combination of HTML, CSS, and JavaScript technologies. It is a type of static web application that provides interactive and engaging user experiences.    ",
+        tags: [
+            {
+                name: "HTML5",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Vanilla JavaScript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/lalitkishork73/Web_Assignments",
+        visit_site: "https://lalitkisho.000webhostapp.com/",
+        
     },
 ];
 

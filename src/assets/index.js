@@ -35,6 +35,8 @@ import tripguide from "./tripguide.png";
 import pratik from "./testimonP/pratik.jpg";
 import mahesh from "./testimonP/mahesh.jpg";
 
+const visit="https://cdn.pixabay.com/photo/2016/02/10/19/34/wikimedia-community-logo-lgbt-1192365_960_720.png"
+
 export {
   pratik,
   mahesh,
@@ -67,5 +69,6 @@ export {
   tripguide,
   mysql,
   express,
-  Functionup
+  Functionup,
+  visit,
 };
