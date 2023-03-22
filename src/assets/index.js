@@ -35,6 +35,9 @@ import tripguide from "./tripguide.png";
 import pratik from "./testimonP/pratik.jpg";
 import mahesh from "./testimonP/mahesh.jpg";
 
+import webapps from "./webapps.png"
+import urlshotner from "./urlshortner.png";
+
 const visit="https://cdn.pixabay.com/photo/2016/02/10/19/34/wikimedia-community-logo-lgbt-1192365_960_720.png"
 
 export {
@@ -71,4 +74,6 @@ export {
   express,
   Functionup,
   visit,
+  webapps,
+  urlshotner
 };
